@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Django Template</title>
+    </head>
+<body>
+    <h1>Head {{data}}</h1>
+    <h2>Response from Django template</h2>
+    <h3> Head 3</h3>
+    <img src = "{% static 'idk.jpg' %}">
+    <ul>
+        {% for i in data %}
+        <li>{{i}}</li>
+        {% endfor %}    
+    </ul>
+</body>
+</html>

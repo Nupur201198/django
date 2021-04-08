@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignUp Page</title>
+    </head>
+<body>
+    <h1>SignUp Here</h1>
+    <form method = "POST">
+        {% csrf_token %}
+
+        Enter FirstName: <input type = "text" name = "fname"><br>
+        Enter LastName: <input type = "text" name = "lname"><br>
+        Enter UserName: <input type = "text" name = "uname"><br>
+        Enter Pasword: <input type = "password" name = "pwd"><br>
+        Enter Email: <input type = "text" name = "email"><br>
+        Enter Mobile: <input type = "number" name = "mob"><br>
+        Select Usertype:
+        <select name = "utype">
+            <option value = "buyer">Buyer</option>
+            <option value = "seller">Seller</option>
+        </select><br>
+
+        <input type = "submit" value = "Signup">
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up Page</title>
+    </head>
+<body>
+    <h1>SignUP here!</h1>
+    <form method = 'POST'>
+        {% csrf_token %}
+        {{ data.as_p }}
+        <input type = "submit" value = "signup">
+    </form>
+</body>  
+</html>
